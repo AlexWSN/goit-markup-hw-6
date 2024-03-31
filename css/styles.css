@@ -618,7 +618,7 @@ input[type="email"]
 .input-icon svg {
   position: absolute;
   top: 50%;
-  left: 10px; /* Ajustează poziția pictogramei */
+  left: 100px; /* Ajustează poziția pictogramei */
   transform: translateY(-50%);
 }
 
@@ -646,13 +646,13 @@ button[type="submit"] {
   height: 24px;
   border-radius: 50%;
 
-  /* Stilizare pentru simbolul X */
+  
   &::before {
-    content: "\00D7"; /* Simbolul X în Unicode */
+    content: "\00D7"; 
     font-size: 20px;
     color: #787575;
-    line-height: 24px; /* Ajustarea liniei de text pentru a centra simbolul în buton */
-    text-align: center; /* Ajustarea centrării simbolului în buton */
+    line-height: 24px; 
+    text-align: center; 
   }
 }
 
@@ -685,11 +685,6 @@ input[type="text"]:focus,
 input[type="email"]:focus {
   border-color: #007bff;
 }
-.form-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
 
 button[type="submit"] {
   padding: 10px 20px;
@@ -706,7 +701,7 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* Stiluri generale pentru meniul mobil */
+/* Stiluri meniul mobil */
 .mobile-menu {
   display: flex;
   justify-content: space-between;
