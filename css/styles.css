@@ -575,11 +575,10 @@ label {
 }
 .label,
 input {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 input[type="text"],
-input[type="email"]
-{
+input[type="email"] {
   font-size: 14px;
   padding: 8px;
   width: 360px;
@@ -606,7 +605,6 @@ input[type="email"]
   margin-right: 5px; /* Distanță între checkbox și text */
 }
 
-
 .form-group label {
   display: block;
 }
@@ -618,10 +616,9 @@ input[type="email"]
 .input-icon svg {
   position: absolute;
   top: 50%;
-  left: 100px; /* Ajustează poziția pictogramei */
+  left: 10px; /* Ajustează poziția pictogramei */
   transform: translateY(-50%);
 }
-
 
 .input-icon input[type="text"],
 .input-icon input[type="phone"],
@@ -633,7 +630,7 @@ input[type="email"]
 }
 
 button[type="submit"] {
-  margin-top: 20px; /* Spațiu între buton și grupul de câmpuri */
+  margin-top: 20px;
 }
 
 .modal-close-btn {
@@ -646,13 +643,12 @@ button[type="submit"] {
   height: 24px;
   border-radius: 50%;
 
-  
   &::before {
-    content: "\00D7"; 
+    content: "\00D7";
     font-size: 20px;
     color: #787575;
-    line-height: 24px; 
-    text-align: center; 
+    line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -672,8 +668,7 @@ label {
 
 input[type="text"],
 input[type=""],
-input[type="email"]
- {
+input[type="email"] {
   width: 340px;
   padding: 10px;
   border: 1px solid #ccc;
