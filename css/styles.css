@@ -564,6 +564,7 @@ div.form-group {
 
 label {
   font-size: 12px;
+  fill: #a7a7b0;
 }
 .form-group label {
   display: flex;
@@ -584,6 +585,21 @@ input[type="email"] {
   width: 360px;
   height: 20px;
 }
+/* Schimbarea culorii textului */
+.svg-icon label {
+  font-size: 12px;
+  color: #a7a7b0; /* Culoarea textului */
+}
+
+/* Schimbarea culorii iconițelor */
+.svg-icon svg path {
+  fill: #a7a7b0; /* Culoarea iconițelor */
+}
+
+/* Spațiu între iconiță și text */
+.svg-icon label i {
+  margin-right: 10px;
+}
 
 #comment {
   width: 300px;
@@ -591,6 +607,7 @@ input[type="email"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color: #a7a7b0;
 }
 .checkbox-container {
   display: flex;
@@ -625,7 +642,7 @@ input[type="email"] {
 .input-icon input[type="email"],
 .input-icon textarea {
   padding-left: 30px;
-  color: #808080;
+  color: #a5a0a0;
   border: none;
 }
 
@@ -647,7 +664,7 @@ button[type="submit"] {
     content: "\00D7";
     font-size: 20px;
     color: #787575;
-    line-height: 24px;
+    line-height: 22px;
     text-align: center;
   }
 }
@@ -664,6 +681,7 @@ div.form-group {
 label {
   display: block;
   position: relative;
+  color: #a7a7b0;
 }
 
 input[type="text"],
@@ -671,7 +689,7 @@ input[type=""],
 input[type="email"] {
   width: 340px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #959090;
   border-radius: 5px;
   transition: border-color 0.25s ease;
 }
@@ -827,6 +845,9 @@ button[type="submit"]:hover {
   transform: translateY(-50%);
   fill: #a7a7b0; /* Schimbare culoare iconiță */
   width: 18px; /* Schimbare dimensiune iconiță */
+}
+.svg-icon svg path {
+  fill: #a7a7b0; /* Schimbare culoare iconiță */
 }
 
 .svg-icon input {
