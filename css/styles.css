@@ -571,7 +571,7 @@ label {
 }
 
 label {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .label,
 input {
@@ -695,8 +695,154 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
-body {
-  margin: 50px;
+/* Repozitionare etichetelor de deasupra câmpurilor */
+label.name {
+  margin-top: 6px;
+}
+
+label.phone {
+  margin-top: 12px;
+}
+
+label.email {
+  margin-top: 18px;
+}
+
+/* Stilizare pentru eticheta de nume (Name) */
+label.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+/* Stilizare pentru iconița de utilizator */
+.user-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Stilizare pentru eticheta de telefon (Phone) */
+label.phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Spațiu între rânduri */
+}
+
+.phone-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+label.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.email-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  margin-bottom: 0px;
+}
+
+.svg-icon {
+  position: relative;
+}
+
+.svg-icon i {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+.user-icon,
+.phone-icon,
+.email-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* Spațiu între iconiță și text */
+}
+
+.phone-icon {
+  margin-bottom: 10px; /* Spațiu între iconiță și text pentru telefon */
+}
+
+.email-icon {
+  margin-bottom: 0px; /* Eliminarea spațiului între iconiță și text pentru email */
+}
+
+/* Stilizare pentru input-ul de tip text */
+input[type="text"],
+input[type="phone"],
+input[type="email"] {
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid #d9d9d9;
+  border-radius: 6px;
+  height: 44px;
+  padding-left: 40px; /* Spațiu pentru iconiță */
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+  margin-bottom: -10px; /* Spațiu între rânduri */
+}
+
+/* Stilizare pentru butonul de submit */
+button[type="submit"] {
+  background-color: #4d5ae5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 12px; /* Spațiu între ultimul rând și buton */
+}
+
+/* Stilizare la hover pentru butonul de submit */
+button[type="submit"]:hover {
+  background-color: #3245b5;
+}
+.input-icon {
+  position: relative;
+}
+.svg-icon {
+  position: relative;
+  margin-bottom: 20px; /* Spațiere între grupurile de câmpuri */
+}
+
+.svg-icon label {
+  display: flex;
+  align-items: center;
+}
+
+.svg-icon svg {
+  position: absolute;
+  left: 10px; /* Poziționare la stânga */
+  top: 80%; /* Ajustare la mijlocul vertical */
+  transform: translateY(-50%);
+  fill: #4d5ae5; /* Schimbare culoare iconiță */
+  width: 18px; /* Schimbare dimensiune iconiță */
+  height: 18px;
+}
+
+.svg-icon input {
+  padding-left: 30px; /* Asigurare spațiu pentru iconiță */
+}
+
+.phone-icon,
+.email-icon {
+  position: absolute;
+  right: 10px; /* Poziționare la dreapta */
+  top: 50%; /* Ajustare la mijlocul vertical */
+  transform: translateY(-50%);
+  fill: #83838a; /* Schimbare culoare iconiță */
+  width: 18px; /* Schimbare dimensiune iconiță */
+  height: 18px;
 }
 
 .user-icon {
@@ -740,7 +886,7 @@ input[type="text"] {
 .svg-icon i {
   position: absolute;
   left: 12px;
-  top: 10px;
+  top: 25px;
   padding: 6px;
   transition: 0.3s;
 }
@@ -758,18 +904,6 @@ input:-ms-input-placeholder {
   color: #999;
 }
 
-input:focus::-webkit-input-placeholder {
-  color: #383838;
-}
-input:focus:-moz-placeholder {
-  color: #383838;
-}
-input:focus::-moz-placeholder {
-  color: #383838;
-}
-input:focus:-ms-input-placeholder {
-  color: #383838;
-}
 /* Stiluri meniul mobil */
 .mobile-menu {
   display: flex;
